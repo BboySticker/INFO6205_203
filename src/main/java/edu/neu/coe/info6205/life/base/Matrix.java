@@ -11,7 +11,7 @@ import java.util.function.BiFunction;
  * This class was designed to optimize the performance of Groups.
  * However, it hasn't been thoroughly tested and I'm fairly sure it needs significant work.
  */
-class Matrix {
+public class Matrix {
 		/**
 		 * Constructor designed for creating a blank Matrix.
 		 *
@@ -88,7 +88,7 @@ class Matrix {
 		}
 
 		/**
-		 * Add a cell at Point p.
+		 * Remove a cell at Point p.
 		 *
 		 * @param p the point at which we want to remove a cell.
 		 */
@@ -615,4 +615,13 @@ class Matrix {
 		// TODO implement me
 		private boolean fit;
 
+		public static void main(String[] args) {
+				Matrix matrix = new Matrix(100, 100);
+				matrix.addCell(new Point(50, 50));
+				matrix.addCell(new Point(10, 50));
+				matrix.addCell(new Point(50, 10));
+				matrix.addCell(new Point(10, 10));
+
+				System.out.println(matrix.getCount());
+		}
 }
