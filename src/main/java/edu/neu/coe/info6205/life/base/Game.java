@@ -100,14 +100,14 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 				return generations > 0 ? growth * 1.0 / generations : -0.1;
 		}
 
-		public static final int MaxGenerations = 1000;
+		public static final int MaxGenerations = 6000;
 
 		/**
 		 * Main program for Game of Life.
 		 * @param args the name of the starting pattern (defaults to "Blip")
 		 */
 		public static void main(String[] args) {
-				String patternName = args.length > 0 ? args[0] : "Blip";
+				String patternName = args.length > 0 ? args[0] : "Acorn";
 				System.out.println("Game of Life with starting pattern: " + patternName);
 				final String pattern = Library.get(patternName);
 				final Behavior generations = run(0L, pattern);
@@ -215,6 +215,14 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 				}
 		}
 
+		/**
+		 * Constructor of Game
+		 *
+		 * @param generation long
+		 * @param grid Grid class
+		 * @param previous BiConsumer indicates a operation that takes two parameters and return nothing
+		 * @param monitor
+		 */
 		private Game(long generation, Grid grid, Game previous, BiConsumer<Long, Group> monitor) {
 				this.grid = grid;
 				this.generation = generation;
@@ -225,7 +233,7 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 		private boolean terminated() {
 				return testTerminationPredicate(g -> g.generation >= MaxGenerations, "having exceeded " + MaxGenerations + " generations") ||
 								testTerminationPredicate(g -> g.getCount() <= 1, "extinction") ||
-								// TODO now we look for two consecutive equivalent games...
+								// Finished - TODO now we look for two consecutive equivalent games...
 								testTerminationPredicate(Game::previousMatchingCycle, "having matching previous games");
 		}
 
@@ -235,7 +243,7 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 		 * NOTE this method of checking for cycles is not guaranteed to work!
 		 * NOTE this method may be very inefficient.
 		 * <p>
-		 * TODO project teams may need to fix this method.
+		 * Finished - TODO project teams may need to fix this method.
 		 *
 		 * @param game the game to check.
 		 * @return a Boolean.
@@ -248,20 +256,21 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 				Game current = game;
 				while (current != null && history != null && cycles > 0) {
 						if (current.equals(history)) {
+								return true;
+						} else {
 								current = current.previous;
 								history = history.previous;
 								cycles--;
-						} else
-								return false;
+						}
 				}
-				return true;
+				return false;
 		}
 
 		/**
 		 * Find a game which matches the given game.
 		 *
 		 * @param game the game to match.
-		 * @return a MatchingGame object: if the match field is null it means that we did not find a match;
+		 * @return a MatchingGame object: if the match field (candidate) is null it means that we did not find a match;
 		 * the k field is the number of generations between game and the matching game.
 		 */
 		private static MatchingGame findCycle(Game game) {

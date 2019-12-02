@@ -490,14 +490,14 @@ public class Group implements Generational<Group, Void>, Renderable, Countable {
 		private static final int LonelinessNeighborThreshold = 2;
 		private static final int OvercrowdingNeighborThreshold = 3;
 		private static final Range DeathRange = Range.valueOf(LonelinessNeighborThreshold, OvercrowdingNeighborThreshold);
-		private final long generation; // the current generation of this Group.
-		private List<Point> points; // the list of non-empty cells within this group (must include one point at the origin).
-		private Point origin; // the position of the origin relative to the grid.
+		private final long generation;  // the current generation of this Group.
+		private List<Point> points;  // the list of non-empty cells within this group (must include one point at the origin).
+		private Point origin;  // the position of the origin relative to the grid.
 		// All cells have coordinates which are relative to the origin.
-		private transient Point extent1; // the position of the corner of the enclosing rectangle of this Group,
+		private transient Point extent1;  // the position of the corner of the enclosing rectangle of this Group,
 		// which is closest to the origin of the coordinate system.
 		// All cells have positive coordinates compared to extent1.
-		private transient Point extent2; // the position of the corner of the enclosing rectangle of this Group,
+		private transient Point extent2;  // the position of the corner of the enclosing rectangle of this Group,
 
 		/**
 		 * Base constructor.

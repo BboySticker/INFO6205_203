@@ -87,8 +87,7 @@ public class Point implements Comparable<Point> {
 				if (this == o) return true;
 				if (o == null || getClass() != o.getClass()) return false;
 				Point point = (Point) o;
-				return x == point.x &&
-								y == point.y;
+				return x == point.x && y == point.y;
 		}
 
 		@Override
@@ -98,10 +97,7 @@ public class Point implements Comparable<Point> {
 
 		@Override
 		public String toString() {
-				return "{" +
-								x +
-								", " + y +
-								'}';
+				return "{" + x + ", " + y + '}';
 		}
 
 		public static List<Point> points(String s) {
