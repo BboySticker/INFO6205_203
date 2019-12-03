@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20633283-2ca6-44ce-82c1-0bd8f7eed39e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/ga/Initialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/ga/Reproduction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/ga/Selection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/mystaff/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/mystaff/GOL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/mystaff/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/mystaff/MainJFrame.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/mystaff/MainJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Game$MatchingGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Game$MatchingGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/library/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/library/Library.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1UR17x2yCUOrv1Gca4NJDzzB0wO" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20633283-2ca6-44ce-82c1-0bd8f7eed39e" name="Default Changelist" comment="" />
+      <created>1575304429241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575304429241</updated>
+      <workItem from="1575304432523" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
