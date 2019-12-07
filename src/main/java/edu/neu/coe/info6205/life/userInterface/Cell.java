@@ -1,4 +1,4 @@
-//package edu.neu.coe.info6205.mystaff;
+//package edu.neu.coe.info6205.life.userInterface;
 //
 //import java.util.Random;
 //
@@ -32,8 +32,6 @@
 //        else if (state == 1) fill(0);
 //        else if (previous == 1 && state == 0) fill(255,0,0);
 //        else fill(255);
-//        stroke(0);
-//        rect(x, y, w, w);
 //    }
 //
 //    private void fill(int r, int g, int b) {

@@ -1,4 +1,4 @@
-//package edu.neu.coe.info6205.mystaff;
+//package edu.neu.coe.info6205.life.userInterface;
 //
 //import javax.swing.*;
 //
