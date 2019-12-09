@@ -70,7 +70,7 @@ public class GameOfLife
      *
      * @param box
      */
-    private void randomStart(int [][] box)
+    public void randomStart(int [][] box)
     {
         for (int i = 0; i < box.length; i ++)
         {
@@ -88,7 +88,7 @@ public class GameOfLife
      *
      * @param array
      */
-    private void fillBoard(int [][] array) {
+    public void fillBoard(int [][] array) {
         for (int i = 0; i < array.length; i ++) {
             for (int j = 0; j < array.length; j ++) {
                 array [i][j] = 0;
@@ -102,7 +102,7 @@ public class GameOfLife
      *
      * @param array
      */
-    private void setUp(int [][] array) {
+    public void setUp(int [][] array) {
 
         // fill the current board with 0's
         fillBoard(array);
@@ -205,7 +205,7 @@ public class GameOfLife
      * @param parent2
      * @return
      */
-    private int [][] crossOver(int [][] parent1, int [][] parent2) {
+    public int [][] crossOver(int [][] parent1, int [][] parent2) {
 
         // initialize the child
         int [][] child = new int [M][M];
@@ -241,7 +241,7 @@ public class GameOfLife
      * @param original
      * @return
      */
-    private int [][] mutate(int [][] original)
+    public int [][] mutate(int [][] original)
     {
         // initialize the mutated array
         int [][] mutatedArray = new int [M][M];
@@ -285,7 +285,7 @@ public class GameOfLife
         return mutatedArray;
     }
 
-    private void saveBox(int [][] array)
+    public void saveBox(int [][] array)
     {
         int spot = (array.length / 2) - 5;
 
@@ -463,7 +463,7 @@ public class GameOfLife
      * @param a1
      * @param a2
      */
-    private void combineArrays(int [][] a1, int [][] a2)
+    public void combineArrays(int [][] a1, int [][] a2)
     {
         for (int i = 0; i < a1.length; i ++)
         {
@@ -483,7 +483,7 @@ public class GameOfLife
      * @param iteration
      * @param vals
      */
-    private void fitness(float sol, int iteration, float [] vals, float [] f) {
+    public void fitness(float sol, int iteration, float [] vals, float [] f) {
         if (sol > best && sol != Float.POSITIVE_INFINITY) {
             best = sol;
             System.out.println("Iteration: " + iteration + "     Best: " + best);
@@ -514,7 +514,7 @@ public class GameOfLife
      *
      * @return
      */
-    private int [][] currentBoard() {
+    public int [][] currentBoard() {
 
         if (b1) {
             // on board1
@@ -534,7 +534,7 @@ public class GameOfLife
      *
      * @return
      */
-    private int [][] nextBoard() {
+    public int [][] nextBoard() {
 
         // if you're on board1
         // you want to modify board2
@@ -555,7 +555,7 @@ public class GameOfLife
      * @param array
      * @return
      */
-    private float [] orderFitnesses(float [] array) {
+    public float [] orderFitnesses(float [] array) {
 
         float [] unsortedArray = array;
         float [] orderedArray = new float [unsortedArray.length];
@@ -578,7 +578,7 @@ public class GameOfLife
      * @param nth
      * @return
      */
-    private int findDesiredFit(float [] array, int nth) {
+    public int findDesiredFit(float [] array, int nth) {
 
         float [] k = orderFitnesses(array);
         int index = 0;
@@ -602,7 +602,7 @@ public class GameOfLife
      * @param j
      * @return numAlive
      */
-    private int checkNeighbors(int [][] array, int i , int j) {
+    public int checkNeighbors(int [][] array, int i , int j) {
 
         // number of live neighboring cells
         int numAlive = 0;
@@ -637,7 +637,7 @@ public class GameOfLife
      * @param j
      * @return
      */
-    private boolean atBorder(int [][] array, int i, int j) {
+    public boolean atBorder(int [][] array, int i, int j) {
 
         // check if the cell is at the border
         if (i == array.length - 1 || i == 0 || j == 0 || j == array.length - 1) {
@@ -657,7 +657,7 @@ public class GameOfLife
      * @param j
      * @return
      */
-    private boolean alive(int [][] array, int i, int j) {
+    public boolean alive(int [][] array, int i, int j) {
 
         // current cell
         if (array[i][j] == 0) {
@@ -675,7 +675,7 @@ public class GameOfLife
      * @param array
      * @return
      */
-    private int countLiveCells(int [][] array) {
+    public int countLiveCells(int [][] array) {
 
         int numAlive = 0;
 
@@ -696,7 +696,7 @@ public class GameOfLife
      *
      * @param array
      */
-    private void displayBoard(int [][] array) {
+    public void displayBoard(int [][] array) {
 
         for (int i = 0; i < array.length; i ++) {
             for (int j = 0; j < array.length; j ++) {
