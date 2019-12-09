@@ -4,12 +4,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Random;
 
 
 public class InitCase {
 
-    public static void createFile(int[][] matrix, long seed, long best){
+    public static void createFile(int[][] matrix, long seed, float best){
 
         PrintWriter writer = null;
         int rows = matrix.length;
