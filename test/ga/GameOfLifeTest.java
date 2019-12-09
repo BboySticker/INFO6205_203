@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
  */
 public class GameOfLifeTest {
 
-    @Befgore
+    @Before
     public void before() throws Exception {
     }
 

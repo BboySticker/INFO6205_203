@@ -205,7 +205,7 @@ public class GameOfLife
      * @param parent2
      * @return
      */
-    public int [][] crossOver(int [][] parent1, int [][] parent2) {
+    public static int [][] crossOver(int [][] parent1, int [][] parent2) {
 
         // initialize the child
         int [][] child = new int [M][M];
@@ -602,7 +602,7 @@ public class GameOfLife
      * @param j
      * @return numAlive
      */
-    public int checkNeighbors(int [][] array, int i , int j) {
+    public static int checkNeighbors(int [][] array, int i , int j) {
 
         // number of live neighboring cells
         int numAlive = 0;
@@ -637,7 +637,7 @@ public class GameOfLife
      * @param j
      * @return
      */
-    public boolean atBorder(int [][] array, int i, int j) {
+    public static boolean atBorder(int [][] array, int i, int j) {
 
         // check if the cell is at the border
         if (i == array.length - 1 || i == 0 || j == 0 || j == array.length - 1) {
@@ -657,7 +657,7 @@ public class GameOfLife
      * @param j
      * @return
      */
-    public boolean alive(int [][] array, int i, int j) {
+    public static boolean alive(int [][] array, int i, int j) {
 
         // current cell
         if (array[i][j] == 0) {
