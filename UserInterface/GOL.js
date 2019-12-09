@@ -1,6 +1,4 @@
-// The Nature of Code
-// Daniel Shiffman
-// http://natureofcode.com
+
 
 function GOL() {
   var board = [];
@@ -11,14 +9,13 @@ function GOL() {
   var oneCounter = 0;
   var generation = 0;
   var isStop = false;
-  //read init from file, need to run in chrome unsafe mode to bypass CORS issue
-  //run this command to start a unsafe mode chrome:
-  //open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+
+  // read init from file, need to run in chrome unsafe mode to bypass CORS issue
+  // run this command to start a unsafe mode chrome:
   this.readInputAndInit = function(file) {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function ()
-    {
+    rawFile.onreadystatechange = function () {
         if(rawFile.readyState === 4)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
