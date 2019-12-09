@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0361adf6-9674-4af4-ba66-26f4171aa029" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INFO6205.iml" beforeDir="false" afterPath="$PROJECT_DIR$/INFO6205.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInterface/GOL.js" beforeDir="false" afterPath="$PROJECT_DIR$/UserInterface/GOL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ga/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ga/GameOfLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ga/GameOfLifeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ga/GameOfLifeTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -52,6 +53,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ga" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="ga" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -99,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575862191468</updated>
       <workItem from="1575863783110" duration="2629000" />
+      <workItem from="1575867287777" duration="305000" />
     </task>
     <servers />
   </component>
@@ -110,7 +115,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
