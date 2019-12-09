@@ -1,3 +1,5 @@
+import ga.GameOfLife;
+import caseGenerator.InitCase;
 /**
  * Conway's Game of Life
  *
@@ -8,7 +10,7 @@
  *
  */
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         // create new game of life  with a 32x32 board
         GameOfLife life = new GameOfLife();
