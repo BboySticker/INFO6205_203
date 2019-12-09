@@ -483,10 +483,8 @@ public class GameOfLife
      * @param iteration
      * @param vals
      */
-    private void fitness(float sol, int iteration, float [] vals, float [] f)
-    {
-        if (sol > best && sol != Float.POSITIVE_INFINITY)
-        {
+    private void fitness(float sol, int iteration, float [] vals, float [] f) {
+        if (sol > best && sol != Float.POSITIVE_INFINITY) {
             best = sol;
             System.out.println("Iteration: " + iteration + "     Best: " + best);
             bestStart = population.get(findDesiredFit(f, 1));
@@ -494,12 +492,9 @@ public class GameOfLife
             bestFinal = nextBoard();
             saveBox(bestStart);
         }
-        else if (sol == Float.POSITIVE_INFINITY)
-        {
-            for (int i = 0; i < vals.length; i ++)
-            {
-                if (vals[i] > best && vals[i] != Float.POSITIVE_INFINITY)
-                {
+        else if (sol == Float.POSITIVE_INFINITY) {
+            for (int i = 0; i < vals.length; i ++) {
+                if (vals[i] > best && vals[i] != Float.POSITIVE_INFINITY) {
                     best = vals[i];
                     System.out.println("Iteration: " + iteration + "     Best: " + best);
                     bestStart = population.get(findDesiredFit(f, 1));
@@ -513,25 +508,23 @@ public class GameOfLife
     }
 
 
-
     /**
      * Looks at the two boolean values and determines
      * which board is the current board
      *
      * @return
      */
-    private int [][] currentBoard()
-    {
-        if (b1)
-        {
+    private int [][] currentBoard() {
+
+        if (b1) {
             // on board1
             return board1;
         }
-        else
-        {
+        else {
             // on board2
             return board2;
         }
+
     }
 
 
@@ -541,33 +534,35 @@ public class GameOfLife
      *
      * @return
      */
-    private int [][] nextBoard()
-    {
+    private int [][] nextBoard() {
+
         // if you're on board1
         // you want to modify board2
-        if (b1)
-        {
+        if (b1) {
             return board2;
         }
-        else
-        {
+        else {
             // otherwise modify board1
             return board1;
         }
     }
 
 
-    // order the array from least to greatest then reverse it
-    // so most fit is at position 0 in the array
-    private float [] orderFitnesses(float [] array)
-    {
+    /**
+     * Sort the array from least to greatest then reverse it
+     * so most fit is at position 0 in the array
+     *
+     * @param array
+     * @return
+     */
+    private float [] orderFitnesses(float [] array) {
+
         float [] unsortedArray = array;
         float [] orderedArray = new float [unsortedArray.length];
         Arrays.sort(unsortedArray);
         int a = 0;
 
-        for (int i = unsortedArray.length - 1; i > -1; i --)
-        {
+        for (int i = unsortedArray.length - 1; i > -1; i --) {
             orderedArray[a] = unsortedArray[i];
             a++;
         }
@@ -576,19 +571,22 @@ public class GameOfLife
     }
 
 
-    // runs through the unsorted float array and looks for the
-    // nth largest fitness
-    private int findDesiredFit(float [] array, int nth)
-    {
+    /**
+     * Runs through the unsorted float array and looks for the nth largest fitness
+     *
+     * @param array
+     * @param nth
+     * @return
+     */
+    private int findDesiredFit(float [] array, int nth) {
+
         float [] k = orderFitnesses(array);
         int index = 0;
 
         float desired = k[nth - 1];
 
-        for (int i = 0; i < array.length; i ++)
-        {
-            if (array[i] == desired)
-            {
+        for (int i = 0; i < array.length; i ++) {
+            if (array[i] == desired) {
                 index = i;
             }
         }
@@ -597,16 +595,15 @@ public class GameOfLife
 
 
     /**
-     *  This method looks at the cells around your current cell
-     *  to determine how many live neighbors it has
+     *  Determine how many live neighbors it has
      *
      * @param array
      * @param i
      * @param j
      * @return numAlive
      */
-    private int checkNeighbors(int [][] array, int i , int j)
-    {
+    private int checkNeighbors(int [][] array, int i , int j) {
+
         // number of live neighboring cells
         int numAlive = 0;
 
@@ -619,12 +616,9 @@ public class GameOfLife
         int maxCol = (j != array.length - 1) ? j + 1: 0;
 
         // iterates over the neighboring cells and counts how many are alive
-        for (int row = minRow; row <= maxRow; row++)
-        {
-            for (int column = minCol; column <= maxCol; column++)
-            {
-                if (array[row][column] == 1 && !(row == i && column == j))
-                {
+        for (int row = minRow; row <= maxRow; row++) {
+            for (int column = minCol; column <= maxCol; column++) {
+                if (array[row][column] == 1 && !(row == i && column == j)) {
                     numAlive++;
                 }
             }
@@ -643,15 +637,13 @@ public class GameOfLife
      * @param j
      * @return
      */
-    private boolean atBorder(int [][] array, int i, int j)
-    {
+    private boolean atBorder(int [][] array, int i, int j) {
+
         // check if the cell is at the border
-        if (i == array.length - 1 || i == 0 || j == 0 || j == array.length - 1)
-        {
+        if (i == array.length - 1 || i == 0 || j == 0 || j == array.length - 1) {
             return true;
         }
-        else
-        {
+        else {
             return false;
         }
     }
@@ -665,37 +657,31 @@ public class GameOfLife
      * @param j
      * @return
      */
-    private boolean alive(int [][] array, int i, int j)
-    {
+    private boolean alive(int [][] array, int i, int j) {
+
         // current cell
-        if (array[i][j] == 0)
-        {
+        if (array[i][j] == 0) {
             return false;
         }
-        else
-        {
+        else {
             return true;
         }
     }
 
 
     /**
-     * counts and returns the number of
-     * live cells in the board
+     * Counts and returns the number of live cells in the board
      *
      * @param array
      * @return
      */
-    private int countLiveCells(int [][] array)
-    {
+    private int countLiveCells(int [][] array) {
+
         int numAlive = 0;
 
-        for (int i = 0; i < array.length; i ++)
-        {
-            for (int j = 0; j < array.length; j ++)
-            {
-                if (array[i][j] == 1)
-                {
+        for (int i = 0; i < array.length; i ++) {
+            for (int j = 0; j < array.length; j ++) {
+                if (array[i][j] == 1) {
                     numAlive ++;
                 }
             }
@@ -706,57 +692,18 @@ public class GameOfLife
 
 
     /**
-     * This method looks at the binary matrix and for every 4
-     * elements it reads in, it is then converted to hexadecimal
-     * and printed to provide a more compact form of output
+     * Display the board with 0's and 1's
      *
      * @param array
      */
-    private void displayCompactBoard(int [][] array)
-    {
-        // num will contain the four elements
-        String num = "";
+    private void displayBoard(int [][] array) {
 
-        // for every space in board
-        for (int row = 0; row < array.length; row ++)
-        {
-            for (int column = 0; column < array.length; column ++)
-            {
-                // add the next element
-                num = num + array[row][column];
-
-
-                // if your length is 4
-                if (num.length() == 4)
-                {
-                    // convert it to hexadecimal
-                    int binary = Integer.parseInt(String.valueOf(num), 2);
-                    String hex = Integer.toHexString(binary);
-
-                    // print out the hex value
-                    System.out.print(hex.toUpperCase());
-
-                    // then reset num
-                    num = "";
-                }
-            }
-            System.out.println();
-        }
-    }
-
-
-    private void displayBoard(int [][] array)
-    {
-        for (int i = 0; i < array.length; i ++)
-        {
-            for (int j = 0; j < array.length; j ++)
-            {
-                if (array[i][j] == 0)
-                {
+        for (int i = 0; i < array.length; i ++) {
+            for (int j = 0; j < array.length; j ++) {
+                if (array[i][j] == 0) {
                     System.out.print("0");
                 }
-                else
-                {
+                else {
                     System.out.print("1");
                 }
             }
