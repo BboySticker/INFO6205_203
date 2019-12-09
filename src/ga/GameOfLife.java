@@ -9,17 +9,15 @@ import java.util.concurrent.TimeUnit;
 public class GameOfLife
 {
 
-    public static int N = 10;
+    public static int N = 5;
     public static int M = 1000;
 
 
-    // these are the two game boards the program will use to create each other
-    // I look at one board and use those cells to create the next board
     public int [][] board1 = new int [M][M];
     public int [][] board2 = new int [M][M];
 
 
-    // variables used to store the best conditions
+    // used to store the best start pattern
     public int [][] bestBox = new int [N][N];
 
     public int [][] bestFinal = new int [M][M];
@@ -39,7 +37,7 @@ public class GameOfLife
     public boolean b2;
 
 
-    // number of desired genertions
+    // number of desired generations
     public int generations;
 
 
@@ -68,15 +66,12 @@ public class GameOfLife
 
 
     /**
-     * creates a random pattern on the matrix
-     * that is passed into it
+     * Create a random start pattern
      *
      * @param box
      */
     private void randomStart(int [][] box)
     {
-        // Random rand = new Random();
-
         for (int i = 0; i < box.length; i ++)
         {
             for (int j = 0; j < box.length; j ++)
@@ -89,16 +84,13 @@ public class GameOfLife
 
 
     /**
-     * fill the passed in array with 0's
+     * Initialization: fill with 0's
      *
      * @param array
      */
-    private void fillBoard(int [][] array)
-    {
-        for (int i = 0; i < array.length; i ++)
-        {
-            for (int j = 0; j < array.length; j ++)
-            {
+    private void fillBoard(int [][] array) {
+        for (int i = 0; i < array.length; i ++) {
+            for (int j = 0; j < array.length; j ++) {
                 array [i][j] = 0;
             }
         }
@@ -106,13 +98,12 @@ public class GameOfLife
 
 
     /**
-     * Put the random start into the larger array. Also
-     * used if we find multiple fitnesses
+     * Put the random start pattern into a larger array.
      *
      * @param array
      */
-    private void setUp(int [][] array)
-    {
+    private void setUp(int [][] array) {
+
         // fill the current board with 0's
         fillBoard(array);
 
@@ -120,15 +111,11 @@ public class GameOfLife
 
         randomStart(box);
 
-        // used in putting the 10x10 middle box
-        // into the 1000x1000
+        // put at center
         int spot = (array.length / 2) - 5;
 
-
-        for (int i = spot; i < spot + N; i ++)
-        {
-            for (int j = spot; j < spot + N; j ++)
-            {
+        for (int i = spot; i < spot + N; i ++) {
+            for (int j = spot; j < spot + N; j ++) {
                 array[i][j] = box[i-spot][j-spot];
             }
         }
@@ -136,73 +123,56 @@ public class GameOfLife
 
 
     /**
-     * This is where the main process of determining whether
-     * a cell lives or not is done.
+     * Run Conway's Game of Life's rules
      *
      * @param iterations
      * @param array
      */
     public void run(int iterations, int [][] array)
     {
-        // want to start on board 1
+        // start on board 1
         b1 = true;
         b2 = false;
 
         // make board1 = passed in array
-        // you do not want to modify the
-        // passed in array here
         combineArrays(array, currentBoard());
 
         // number of live cells to start
         startLiveCells = countLiveCells(currentBoard());
 
         // perform the game until the number of desired generations has been reached
-        while (generations < iterations)
-        {
+        while (generations < iterations) {
             // for every cell
-            for (int i = 0; i < currentBoard().length; i ++)
-            {
-                for (int j = 0; j < currentBoard().length; j ++)
-                {
-                    // reinforces the idea of a dead border (no cells can live on the border,
-                    // the other option is to wrap the matrix like a map in a civ game)
-                    if (atBorder(currentBoard(), i, j))
-                    {
-                        // nextBoard() and currentBoard() are dependent on
-                        // the booleans b1 and b2
+            for (int i = 0; i < currentBoard().length; i ++) {
+                for (int j = 0; j < currentBoard().length; j ++) {
+                    // reinforces the idea of a dead border (no cells can live on the border)
+                    if (atBorder(currentBoard(), i, j)) {
+                        // nextBoard() and currentBoard() are dependent on the booleans b1 and b2
                         nextBoard()[i][j] = 0;
                     }
-                    else
-                    {
-                        // if you've found a live cell
-                        if (alive(currentBoard(), i, j))
-                        {
-                            // check to see if the cell has 2 or 3 live
-                            // neighbors
-                            if (checkNeighbors(currentBoard(), i, j) == 2 || checkNeighbors(currentBoard(), i, j) == 3)
-                            {
+                    else {
+                        // if found a live cell
+                        if (alive(currentBoard(), i, j)) {
+                            // check live neighbors
+                            if (checkNeighbors(currentBoard(), i, j) == 2 ||
+                                    checkNeighbors(currentBoard(), i, j) == 3) {
                                 // stay alive if it does
                                 nextBoard()[i][j] = 1;
                             }
-                            else
-                            {
-                                // otherwise it dies
+                            else {
+                                // die
                                 nextBoard()[i][j] = 0;
                             }
                         }
-                        // if you found a dead cell
-                        else if (!alive(currentBoard(), i, j))
-                        {
+                        // if found a dead cell
+                        else if (!alive(currentBoard(), i, j)) {
                             // count the number of live neighbors
-                            if (checkNeighbors(currentBoard(), i, j) == 3)
-                            {
-                                // if the number is exactly 3, then the
-                                // current cell
-                                // comes to life
+                            if (checkNeighbors(currentBoard(), i, j) == 3) {
+                                // if the number is 3,
+                                // then the current cell comes to life
                                 nextBoard()[i][j] = 1;
                             }
-                            else
-                            {
+                            else {
                                 nextBoard()[i][j] = 0;
                             }
                         }
@@ -212,22 +182,16 @@ public class GameOfLife
 
             generations ++;
 
-            if (b1)
-            {
-                // switch to board two and move on to
-                // the next generation
+            // switch board
+            if (b1) {
                 b1 = false;
                 b2 = true;
             }
-            else if (b2)
-            {
-                // otherwise switch to board 1 and
-                // move on to the next generation
+            else if (b2) {
                 b1 = true;
                 b2 = false;
             }
         }
-
 
         // number of live cells at the end of the game
         endLiveCells = countLiveCells(nextBoard());
@@ -235,23 +199,19 @@ public class GameOfLife
 
 
     /**
-     * perform a cross over with the two parents
-     * and then return their child
+     * perform a cross over with the two parents and then return their child
      *
      * @param parent1
      * @param parent2
      * @return
      */
-    private int [][] crossOver(int [][] parent1, int [][] parent2)
-    {
-        // initialize the child to a 1000x1000
+    private int [][] crossOver(int [][] parent1, int [][] parent2) {
+
+        // initialize the child
         int [][] child = new int [M][M];
 
-
-        // the only area that a cross over would be productive
-        // is the 8x8 box
+        // center area
         int spot = (parent1.length / 2) - 5;
-
 
         for (int row = spot; row < spot + N; row ++)
         {
