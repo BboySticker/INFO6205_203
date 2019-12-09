@@ -1,89 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20633283-2ca6-44ce-82c1-0bd8f7eed39e" name="Default Changelist" comment="">
+    <list default="true" id="0361adf6-9674-4af4-ba66-26f4171aa029" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/caseGenerator/InitCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INFO6205.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Countable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Generational.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Grid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/LifeException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Matrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Renderable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/ga/Initialization.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/ga/Reproduction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/ga/Selection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/userInterface/Cell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/userInterface/GOL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/userInterface/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/userInterface/MainJFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/userInterface/MainJFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/userInterface/TestGrid02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/util/Range.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/life/base/GameTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/life/base/GridTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/life/base/GroupTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/life/base/MatrixTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/life/base/PointTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/life/library/LibraryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/util/PrivateMethodTester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/util/PrivateMethodTesterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/INFO6205.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Countable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Game$Behavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Game$MatchingGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Generational.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Grid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Group$CellsAndNeighbors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Group.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/LifeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix$Bit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix$Bits.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix$Neighbors$NeighborhoodMask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix$Neighbors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix$Pretty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Matrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/base/Renderable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/ga/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/ga/Initialization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/ga/Reproduction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/ga/Selection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/life/library/Library.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/util/Range.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/INFO6205.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/life/base/GameTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/life/base/GridTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/life/base/GroupTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/life/base/MatrixTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/life/base/PointTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/life/library/LibraryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/util/PrivateMethodTester$PrivateMethodTesterException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/util/PrivateMethodTester.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/util/PrivateMethodTesterTest$Mock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/neu/coe/info6205/util/PrivateMethodTesterTest.class" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,65 +22,74 @@
     <session id="-1516008835">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="InitCase" value="2" />
-          <entry key="java" value="11" />
-          <entry key="jj" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="InitCase" value="36" />
-          <entry key="java" value="25" />
+          <entry key="java" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="61" />
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/caseGenerator/InitCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/gameOfLife/casegenerator/InitCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/UtilsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameOfLifeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CellMatrixTest.java" />
-        <option value="$PROJECT_DIR$/src/gameOfLife/caseGenerator/InitCase" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
-  <component name="ProjectId" id="1UR17x2yCUOrv1Gca4NJDzzB0wO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,38 +102,19 @@
               <item name="INFO6205_203" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="INFO6205" type="b2602c69:ProjectViewProjectNode" />
-              <item name="INFO6205_203" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gameOfLife" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="INFO6205" type="b2602c69:ProjectViewProjectNode" />
-              <item name="INFO6205_203" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gameOfLife" type="462c0819:PsiDirectoryNode" />
-              <item name="caseGenerator" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575861432939" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/test/java" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575862788969" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,34 +128,45 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="INFO6205" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20633283-2ca6-44ce-82c1-0bd8f7eed39e" name="Default Changelist" comment="" />
-      <created>1575304429241</created>
+      <changelist id="0361adf6-9674-4af4-ba66-26f4171aa029" name="Default Changelist" comment="" />
+      <created>1575862191468</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1575304429241</updated>
-      <workItem from="1575304432523" duration="32000" />
+      <updated>1575862191468</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.54363376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -255,111 +184,97 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gameOfLife/ui/GameOfLife.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameOfLife/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/life/base/GridTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="165">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameOfLife/casegenerator/InitCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameOfLifeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CellMatrixTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameOfLife/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/caseGenerator/InitCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tx/gameOfLife/ui/GameOfLife.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/tx/gameOfLife/ui/GameOfLifeTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tx/gameOfLife/casegenerator/InitCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameOfLife/caseGenerator/jj">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/production/src/gameOfLife/caseGenerator/InitCase">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameOfLife/caseGenerator/InitCase">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ScopeChooserConfigurable.UI">
+      <state key="ArtifactsStructureConfigurable.UI">
         <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>INFO6205</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.guava:guava:19.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
